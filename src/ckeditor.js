@@ -11,6 +11,8 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -40,7 +42,7 @@ import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import ExportToPDF from '@ckeditor/ckeditor5-export-pdf/src/exportpdf.js';
 import ExportToWord from '@ckeditor/ckeditor5-export-word/src/exportword.js';
-import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -82,7 +84,11 @@ ClassicEditor.builtinPlugins = [
 	ImageResize,
 	ExportToPDF,
 	ExportToWord,
-	SpecialCharacters
+	SpecialCharacters,
+	SpecialCharactersEssentials,
+	Subscript,
+	Superscript
+
 ];
 
 // Editor configuration.
@@ -100,6 +106,8 @@ ClassicEditor.defaultConfig = {
 			'italic',
 			'strikethrough',
 			'underline',
+			'subscript', 
+			'superscript',
 			'highlight',
 			'|',
 			'alignment',
@@ -117,8 +125,8 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'mediaEmbed',
 			'|',
-			'exportToPDF',
-			'exportToWord',
+			'exportPdf',
+			'exportWord',
 			'|',
 			'undo',
 			'redo'
