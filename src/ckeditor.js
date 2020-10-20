@@ -40,8 +40,6 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight.js';
 import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
-import ExportToPDF from '@ckeditor/ckeditor5-export-pdf/src/exportpdf.js';
-import ExportToWord from '@ckeditor/ckeditor5-export-word/src/exportword.js';
 import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
 
@@ -82,8 +80,6 @@ ClassicEditor.builtinPlugins = [
 	Highlight,
 	ListStyle,
 	ImageResize,
-	ExportToPDF,
-	ExportToWord,
 	SpecialCharacters,
 	SpecialCharactersEssentials,
 	Subscript,
@@ -124,9 +120,6 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'imageUpload',
 			'mediaEmbed',
-			'|',
-			'exportPdf',
-			'exportWord',
 			'|',
 			'undo',
 			'redo'
