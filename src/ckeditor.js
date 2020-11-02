@@ -33,7 +33,6 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
-import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
@@ -73,7 +72,6 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	FontBackgroundColor,
 	FontColor,
-	FontFamily,
 	FontSize,
 	Strikethrough,
 	Underline,
@@ -94,7 +92,6 @@ ClassicEditor.defaultConfig = {
 			'heading',
 			'|',
 			'fontSize',
-			'fontFamily',
 			'fontColor',
 			'fontBackgroundColor',
 			'|',
